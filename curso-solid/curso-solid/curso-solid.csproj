@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{042EF6B6-546D-45F4-B2E4-1DCDDCA67E0E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>curso_solid</RootNamespace>
+    <AssemblyName>curso-solid</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aula1\CalculadoraDeSalario.cs" />
+    <Compile Include="Aula1\Cargo.cs" />
+    <Compile Include="Aula1\Dba.cs" />
+    <Compile Include="Aula1\Desenvolvedor.cs" />
+    <Compile Include="Aula1\DezOuVintePorCento.cs" />
+    <Compile Include="Aula1\Funcionario.cs" />
+    <Compile Include="Aula1\IRegraDeCalculo.cs" />
+    <Compile Include="Aula2\EnviadorDeEmail.cs" />
+    <Compile Include="Aula2\Fatura.cs" />
+    <Compile Include="Aula2\GeradorDeNotaFiscal.cs" />
+    <Compile Include="Aula2\IAcaoAposGerarNota.cs" />
+    <Compile Include="Aula2\NotaFiscal.cs" />
+    <Compile Include="Aula2\NotaFiscalDao.cs" />
+    <Compile Include="Aula2\SAP.cs" />
+    <Compile Include="Aula3\CalculadoraDePrecos.cs" />
+    <Compile Include="Aula3\Compra.cs" />
+    <Compile Include="Aula3\Frete.cs" />
+    <Compile Include="Aula3\IServicoDeEntrega.cs" />
+    <Compile Include="Aula3\ITabelaDePreco.cs" />
+    <Compile Include="Aula3\TabelaDePrecoPadrao.cs" />
+    <Compile Include="Aula4\Boleto.cs" />
+    <Compile Include="Aula4\Fatura.cs" />
+    <Compile Include="Aula4\MeioDePagamento.cs" />
+    <Compile Include="Aula4\Pagamento.cs" />
+    <Compile Include="Aula4\ProcessadorDeBoletos.cs" />
+    <Compile Include="Aula5\ContaComum.cs" />
+    <Compile Include="Aula5\ContaEstudante.cs" />
+    <Compile Include="Aula5\ProcessadorDeInvestimentos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Aula1\QuinzeOuVinteCincoPorCento.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
